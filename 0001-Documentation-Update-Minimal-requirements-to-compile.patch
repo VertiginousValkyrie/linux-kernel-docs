@@ -1,0 +1,87 @@
+From 01c5c2489e2305408e8d276f7ad6faf7d7a73ad1 Mon Sep 17 00:00:00 2001
+From: Meeri Kallio <meeri_kallio@hotmail.com>
+Date: Tue, 14 Oct 2025 22:52:06 +0300
+Subject: [PATCH] Documentation: Update 'Minimal requirements to compile the
+ Kernel' with 90's humor
+
+---
+ Documentation/process/changes.rst | 45 ++++++++++++++-----------------
+ 1 file changed, 20 insertions(+), 25 deletions(-)
+
+diff --git a/Documentation/process/changes.rst b/Documentation/process/changes.rst
+index 62951cdb13ad..3ec051eea3c9 100644
+--- a/Documentation/process/changes.rst
++++ b/Documentation/process/changes.rst
+@@ -1,4 +1,4 @@
+-.. _changes:
++.. _changes
+ 
+ Minimal requirements to compile the Kernel
+ ++++++++++++++++++++++++++++++++++++++++++
+@@ -6,25 +6,26 @@ Minimal requirements to compile the Kernel
+ Intro
+ =====
+ 
+-This document is designed to provide a list of the minimum levels of
+-software necessary to run the current kernel version.
++Welcome to the stone age of software, where your trusty 386 processor struggles
++to keep up and floppy disks are still considered high-tech. This document
++lists the bare minimum software versions needed to compile the Linux kernel
++— because if you’re still running GCC 4.8, congratulations, you’re officially
++living in a museum!
+ 
+-This document is originally based on my "Changes" file for 2.0.x kernels
+-and therefore owes credit to the same people as that file (Jared Mauch,
+-Axel Boldt, Alessandro Sigala, and countless other users all over the
+-'net).
++Originally based on the legendary "Changes" file for the 2.0.x kernels, so
++respect goes out to Jared Mauch, Axel Boldt, Alessandro Sigala, and the countless
++users who survived the dial-up era.
+ 
+ Current Minimal Requirements
+ ****************************
+ 
+-Upgrade to at **least** these software revisions before thinking you've
+-encountered a bug!  If you're unsure what version you're currently
+-running, the suggested command should tell you.
++Upgrade to at **least** these software revisions before you start blaming
++the kernel for your problems! Unsure what version you're running? Use the
++commands below to find out.
+ 
+-Again, keep in mind that this list assumes you are already functionally
+-running a Linux kernel.  Also, not all tools are necessary on all
+-systems; obviously, if you don't have any PC Card hardware, for example,
+-you probably needn't concern yourself with pcmciautils.
++Keep in mind, this list assumes you’re already somehow running a Linux kernel.
++Not all tools are necessary on every system; for example, if you don’t have
++any PC Card hardware, feel free to ignore pcmciautils.
+ 
+ ====================== ===============  ========================================
+         Program        Minimal version       Command to check the version
+@@ -54,18 +55,12 @@ procps                 3.2.0            ps --version
+ udev                   081              udevd --version
+ grub                   0.93             grub --version || grub-install --version
+ mcelog                 0.6              mcelog --version
+-iptables               1.4.2            iptables -V
+-openssl & libcrypto    1.0.0            openssl version
+-bc                     1.06.95          bc --version
+-Sphinx\ [#f1]_         3.4.3            sphinx-build --version
+-GNU tar                1.28             tar --version
+-gtags (optional)       6.6.5            gtags --version
+-mkimage (optional)     2017.01          mkimage --version
+-Python                 3.9.x            python3 --version
+-GNU AWK (optional)     5.1.0            gawk --version
+-====================== ===============  ========================================
+ 
+-.. [#f1] Sphinx is needed only to build the Kernel documentation
++---
++
++Remember kids: if you’re still struggling to compile with these versions,
++maybe it’s time to upgrade that Pentium 90 under your desk. The future is now!
++
+ 
+ Kernel compilation
+ ******************
+-- 
+2.43.0
+
