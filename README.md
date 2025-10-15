@@ -1,1 +1,1 @@
-# Linux kernel docs patch by Meeri
+# Linux kernel docs patch by VertiginousValkyrie
